@@ -1,0 +1,71 @@
+ /* Contenedor del header */
+.header {
+  background-color: #fff;               /* Fondo blanco para armonizar con el logo */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;      /* Sutil línea divisoria */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Leve sombra para un toque futurista */
+  font-family: 'Orbitron', sans-serif;   /* Fuente futurista; si no la usas, un sans-serif moderno funciona bien */
+}
+
+/* Logo */
+.logo img {
+  width: 120px;
+  height: auto;
+}
+
+/* Lista de navegación */
+.header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo de enlaces de navegación */
+.header nav ul li a {
+  color: #333;                          /* Texto oscuro para buena legibilidad */
+  text-decoration: none;
+  font-size: 22px;  /* Letras más grandes */
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+/* Efecto de subrayado animado */
+.header nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #0056b3, #00b8a9); /* Degradado futurista entre azul profundo y verde azulado */
+  transition: width 0.3s ease;
+}
+
+/* Hover en los enlaces */
+.header nav ul li a:hover {
+  color: #0056b3;
+}
+
+.header nav ul li a:hover:after {
+  width: 100%;
+}
+
+/* Responsive para dispositivos pequeños */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+  .header nav ul {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
