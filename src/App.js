@@ -1,14 +1,28 @@
- // src/App.jsx
+// src/App.jsx
 import React from 'react';
-import Home from './pages/Home';
- 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from './components/Footer';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
-import './styles/css/App.css';
-
-function App() {
+const App = () => {
   return (
-    <Home>
-    </Home>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<About />} />
+        <Route path="/servicios" element={<Services />} />
+        <Route path="/proyectos" element={<Projects />} />
+        <Route path="/contacto" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
+
 export default App;
