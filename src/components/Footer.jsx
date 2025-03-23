@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, MessageCircle } from 'lucide-react';
 
 const FooterContainer = styled.footer`
   width: 100%;
@@ -140,15 +140,14 @@ const Footer = () => {
       <FooterInner>
         {/* Información de la Empresa */}
         <FooterSection>
-          <SectionTitle>Vidrios y Aluminios S.A.</SectionTitle>
+          <SectionTitle>JMaria Perú SAC</SectionTitle>
           <AboutText>
-            Somos líderes en el mercado de vidrios y aluminios, ofreciendo productos de alta calidad y soluciones innovadoras para proyectos residenciales y comerciales.
+            Somos una empresa líder en el mercado de vidrios y aluminios en Apurimac, ofreciendo productos de alta calidad y soluciones innovadoras para proyectos residenciales y comerciales.
           </AboutText>
           <SocialMedia>
-            <a href="#"><Facebook size={20} /></a>
-            <a href="#"><Twitter size={20} /></a>
-            <a href="#"><Instagram size={20} /></a>
-            <a href="#"><Linkedin size={20} /></a>
+            <a href="https://wa.me/51972540043" target="_blank" rel="noopener noreferrer"><MessageCircle size={20} /></a>
+            <a href="mailto:jmariaperusac@gmail.com"><Mail size={20} /></a>
+            <a href="tel:+51972540043"><Phone size={20} /></a>
           </SocialMedia>
         </FooterSection>
         
@@ -156,11 +155,11 @@ const Footer = () => {
         <FooterSection>
           <SectionTitle>Enlaces Rápidos</SectionTitle>
           <QuickLinks>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/nosotros">Nosotros</a></li>
+            <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/proyectos">Proyectos</a></li>
+            <li><a href="/contacto">Contacto</a></li>
           </QuickLinks>
         </FooterSection>
         
@@ -168,9 +167,9 @@ const Footer = () => {
         <FooterSection>
           <SectionTitle>Contacto</SectionTitle>
           <ContactInfoList>
-            <li><MapPin size={20} className="icon" /> Calle Ficticia 123, Ciudad</li>
-            <li><Phone size={20} className="icon" /> +123 456 789</li>
-            <li><Mail size={20} className="icon" /> info@vidriosaluminios.com</li>
+            <li><MapPin size={20} className="icon" /> Tintay, Apurimac y Abancay, Apurimac</li>
+            <li><Phone size={20} className="icon" /> +51 972 540 043</li>
+            <li><Mail size={20} className="icon" /> jmariaperusac@gmail.com</li>
           </ContactInfoList>
         </FooterSection>
         
@@ -186,7 +185,7 @@ const Footer = () => {
         </FooterSection>
       </FooterInner>
       <FooterBottom>
-        <p>&copy; 2025 Vidrios y Aluminios S.A. Todos los derechos reservados.</p>
+        <p>&copy; 2024 JMaria Perú SAC. Todos los derechos reservados.</p>
       </FooterBottom>
     </FooterContainer>
   );
